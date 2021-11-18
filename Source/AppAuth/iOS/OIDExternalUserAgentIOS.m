@@ -119,6 +119,7 @@ NS_ASSUME_NONNULL_BEGIN
       }
 #endif
       _webAuthenticationVC = authenticationVC;
+      authenticationVC.prefersEphemeralWebBrowserSession = YES;
       openedUserAgent = [authenticationVC start];
     }
   }
