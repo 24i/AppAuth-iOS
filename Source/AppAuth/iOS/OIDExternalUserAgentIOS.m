@@ -119,9 +119,7 @@ NS_ASSUME_NONNULL_BEGIN
       }
 #endif
       _webAuthenticationVC = authenticationVC;
-      if (@available(iOS 13.0, *)) {
-          authenticationVC.prefersEphemeralWebBrowserSession = YES;
-      }
+      authenticationVC.prefersEphemeralWebBrowserSession = YES;
       openedUserAgent = [authenticationVC start];
     }
   }
